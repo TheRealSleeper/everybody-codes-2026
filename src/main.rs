@@ -3,6 +3,7 @@ use std::fs::read_to_string;
 #[allow(dead_code)]
 mod my_lib; 
 
+#[allow(unreachable_code)]
 #[cfg(test)]
 mod tests; 
 
