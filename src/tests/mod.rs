@@ -14,5 +14,5 @@ fn test1() {
 
 #[test]
 fn test2() {
-    test(part2, todo!(), "sample1.txt");
+    test(part2, 9, "sample1.txt");
 }

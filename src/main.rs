@@ -45,5 +45,11 @@ fn part1(_input: &str) -> Answer {
 }
 
 fn part2(_input: &str) -> Answer {
-    todo!()
+    _input
+        .split(',')
+        .map(|outpost| {
+            let pinecones = outpost.trim().parse::<Answer>().unwrap();
+            ((pinecones + 4).div_ceil(4) * 4 - 4).max(8) - pinecones
+        })
+        .sum()
 }
